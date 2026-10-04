@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BrushCam</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section id="home" class="screen active">
+  <div class="brand">🦷 BrushCam</div>
+  <div class="hero"><div class="tooth">😁</div><h1>What happens if<br>we don't brush?</h1><p>A playful camera experience for parents and kids.</p></div>
+  <button id="start" class="primary">📷 Start Camera</button>
+  <p class="privacy">Camera stays on this device. Parent supervision recommended.</p>
+</section>
+<section id="cameraScreen" class="screen">
+  <div class="topbar"><button id="back">‹</button><b>BrushCam</b><span id="status">Finding face…</span></div>
+  <div class="stage"><video id="video" autoplay playsinline muted></video><canvas id="overlay"></canvas><div id="guide">Smile & show your teeth 😁</div></div>
+  <div class="controls">
+    <div class="modes">
+      <button class="mode active" data-mode="healthy">✨ Healthy</button>
+      <button class="mode" data-mode="plaque">🍬 No Brush</button>
+      <button class="mode" data-mode="cavity">🦠 Cavity</button>
+    </div>
+    <button id="rescue" class="primary">🪥 Brush Rescue!</button>
+  </div>
+</section>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
